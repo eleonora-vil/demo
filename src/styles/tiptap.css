@@ -1,0 +1,141 @@
+/* Basic editor styles */
+.tiptap {
+  outline: none;
+}
+.tiptap > * + * {
+  margin-top: 0.75em;
+}
+.tiptap ul,
+.tiptap ol {
+  padding: 0 1rem;
+}
+.tiptap h1,
+.tiptap h2,
+.tiptap h3,
+.tiptap h4,
+.tiptap h5,
+.tiptap h6 {
+  line-height: 1.1;
+}
+.tiptap h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+.tiptap h2 {
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+.tiptap h3 {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+.tiptap h4 {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+.tiptap h5 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+.tiptap h6 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+.tiptap p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.025em;
+}
+
+.tiptap ul {
+  padding: 0 1rem;
+  list-style-type: disc;
+}
+.tiptap ol {
+  padding: 0 2rem;
+  list-style-type: decimal;
+}
+
+.tiptap code {
+  background-color: rgba(97, 97, 97, 0.1);
+  color: #616161;
+}
+.tiptap pre {
+  background: #0d0d0d;
+  color: #fff;
+  font-family: 'Be Vietnam Pro', monospace;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+.tiptap pre code {
+  color: inherit;
+  padding: 0;
+  background: none;
+  font-size: 0.8rem;
+}
+.tiptap img {
+  width: 100%;
+  border-radius: 8px;
+}
+.tiptap blockquote {
+  padding-left: 1rem;
+  border-left: 2px solid rgba(13, 13, 13, 0.1);
+}
+.tiptap hr {
+  border: none;
+  border-top: 2px solid rgba(13, 13, 13, 0.1);
+  margin: 1rem 0;
+}
+.table-of-content {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  z-index: 2;
+  width: 30rem;
+  max-height: 50vh;
+  overflow: auto;
+  border: 1px solid #ddd;
+}
+@media (max-width: 768px) {
+  .table-of-content {
+    width: 100%;
+  }
+}
+.toc--empty_state {
+  color: #777;
+  user-select: none;
+}
+.toc--list {
+  gap: 0.5rem;
+}
+.toc--list,
+.toc--item--children {
+  display: flex;
+  flex-direction: column;
+}
+.toc--list a {
+  color: #000;
+  text-decoration: none;
+}
+.toc--item {
+  padding-left: calc(1rem * (var(--level) - 1));
+}
+.ProseMirror {
+  padding: 0px;
+}
+.ProseMirror > * + * {
+  margin-top: 0.75em;
+}
